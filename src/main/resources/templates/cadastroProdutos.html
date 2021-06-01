@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+xmlns:th="http://www.thymeleaf.org">
+<head>
+	<meta charset="UTF-8">
+	<title>Cadastro de Produtos</title>
+	<link rel="stylesheet" type="text/css" 
+	href="../css/bootstrap.min.css"/>
+	<script src="../js/bootstrap.min.js"></script>
+</head>
+<body>
+	<!-- inserindo uma logo no site -->
+	<nav class="navbar navbar-dark bg-dark">
+		<a class="navbar-brand" href="#">
+			<img src="../images/youtube.png"
+			alt="Senai" loading="Lazy">
+		</a>
+	</nav>
+	<!-- aqui vai o formulário de cadastro -->
+	<form action="/produto" method="POST"
+	class="form-horizontal">
+		<!-- aqui vai a descrição no form -->
+		<div class="form-group row">
+			<label class="col-4 col-form-Label"
+			for="descricao">Descrição</label>
+			<div class="col-8">
+				<input id="descricao" name="descricao"
+				type="text" class="form-control"
+				required="required">
+			</div>
+		</div>
+		<!-- aqui encerra o codigo da descrição -->
+		<!-- aqui vai a marca no form -->
+		<div class="form-group row">
+			<label class="col-4 col-form-Label"
+			for="marca">Marca</label>
+			<div class="col-8">
+				<input id="marca" name="marca"
+				type="text" class="form-control"
+				required="required">
+			</div>
+		</div>
+		<!-- aqui encerra o codigo da marca -->
+		<!-- aqui vai o preço no form -->
+		<div class="form-group row">
+			<label class="col-4 col-form-Label"
+			for="preco">Preço</label>
+			<div class="col-8">
+				<input id="preco" name="preco"
+				type="number" class="form-control"
+				required="required">
+			</div>
+		</div>
+		<!-- aqui encerra o preço da marca -->
+		<!-- codigo Botão Salvar -->
+		<div class="form-group row">
+			<div class="offset-4 col-8">
+				<button name="submit" type="submit"
+				class="btn btn-primary">Salvar</button>
+			</div>
+		</div>
+		<!-- aqui termina botão salvar -->
+	</form>
+	
+</body>
+</html>
